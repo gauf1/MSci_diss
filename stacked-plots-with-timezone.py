@@ -342,7 +342,7 @@ def create_stacked_plot(weather_data, all_data, wurst2, wurst4, wurst7, wurst8, 
         else:
             axs[0].legend(loc='best', fontsize=8)
     
-    # 2. air Pressure plot
+    # 2. air pressure plot
     if 'Pressure_20290338_mbar' in weather_data.columns and not weather_data.empty:
         axs[1].plot(weather_time_utc, weather_data['Pressure_20290338_mbar'], 
                    color='darkgreen', linewidth=1.5, marker='.', markersize=ms, label='Air Pressure')
